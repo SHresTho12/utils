@@ -1,0 +1,2 @@
+## Don't use this requirements file, it's just for reference for the subfolder
+fpdf==1.7.2
