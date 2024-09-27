@@ -6,7 +6,7 @@ pdf = FPDF()
 pdf.set_auto_page_break(auto=True, margin=15)
 
 # Load the JSON file
-with open('bl_data.json') as json_file:
+with open('./<file>.json') as json_file:
     products = json.load(json_file)
 
 # Function to add a new page and write data
@@ -25,7 +25,7 @@ for product in products:
     add_product_page(product)
 
 # Output the PDF to a file
-pdf_output_path = 'product_catalog.pdf'
+pdf_output_path = '<file>.pdf'
 pdf.output(pdf_output_path)
 
 print(f"PDF generated: {pdf_output_path}")
